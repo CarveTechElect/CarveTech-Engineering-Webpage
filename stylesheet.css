@@ -1,0 +1,179 @@
+.main-container {
+  display: flex;
+  width: auto;
+  height: 300%;
+  background-image: url(images/headerback\ 3.jpg);
+  border-top: 4px solid navy;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.head-container, .sign-reg {
+  z-index: 5;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  width: 400%;
+}
+
+.logo {
+  display: flex;
+}
+
+.company-logo {
+  width: 100px;
+  margin: 0 0 0 20px;
+}
+
+.logo-name-motto {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.name-motto {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  font-family: courier;
+  font-weight: bold;
+  color: navy;
+  margin: 20px 0 0 0;
+  padding: 0px;
+}
+
+.company-motto {
+  font-family: verdana;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sign-reg {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-right: 10px;
+}
+
+.users {
+  padding: 7px;
+  margin: 4px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.page-links {
+  border-top: 4px solid navy;
+  border-bottom: 4px solid navy;
+  background-image: url(/images/Orange\ Background\ 2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page-item {
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: inherit;
+  border: none;
+  color: navy;
+  cursor: pointer;
+}
+
+.body-background {
+  background-image: url(images/images\ \(52\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  border-bottom: 4px solid navy;
+}
+
+.body-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;  
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 2px;
+}
+
+.subhead {
+  font-family: Trebuchet MS;
+  color: white;
+  font-size: 20px;
+  border-top: 2px solid navy;
+  border-bottom: 2px solid navy;
+  padding: 4px;
+  background-image: url(images/headerback\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paragraph {
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  margin: none;
+  padding: none;
+}
+
+.footer-container {
+  background-image: url(images/Texture.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-repeat: none;
+  background-size: cover;
+  border-top: 2px solid navy;
+  border-bottom: 2px solid navy;
+}
+
+.head-office, .work-hours {
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;  
+}
+
+.items-head {
+  list-style-type: none;
+  font-family: Trebuchet MS;
+  color: navy;
+  font-size: 20px;
+}
+
+.footer-items {  
+  list-style-type: none;
+  font-family: courier;
+  font-size: 15px;
+  font-weight: bold;
+}

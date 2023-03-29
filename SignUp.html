@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-container">
+        <div class="head-container">
+          <div class="logo-name-motto">
+            <div class="logo">
+              <img class="company-logo" src="/images/CarveTech Logo 3.png" alt="CarveTech Logo"/>
+            </div>
+            <div class="name-motto">
+              <h1>CarveTech Engineering</h1>
+              <p class="company-motto"><em>...our service is our standard</em></p>
+            </div>
+          </div>
+        </div>
+      <div class="sign-reg">
+        <a href="Sign.html"><button class="users">Log In</button></a>
+        <a href="SignUp.html"><button class="users">Sign Up</button></a>
+      </div>
+      </div>
+      <div class="page-links">
+        <ul class="pages">
+          <a href="index.html"> <button class="page-item">HOME</button></a>
+          <a href="services.html"><button class="page-item">SERVICES</button></a>
+          <a href="gallery.html"><button class="page-item">GALLERY</button></a>
+          <a href="about.html"><button class="page-item">ABOUT US</button></a>
+          <a href="contact.html"><button class="page-item">CONTACT US</button></a>
+          <a href="learn.html"><button class="page-item">LEARN</button></a>
+        </ul>
+      </div>      
+    </header>
+    <br />
+    <div class="form">
+      <div class="form_div">
+        <div class="form_subject">
+
+          <h3>REGISTRATION FORM</h3>
+
+          <div class="image-container" id="imgBox">
+            <input
+            type="file"
+            accept="image/*"
+            name="image"
+            id="file"
+            onchange="loadFile(event)"
+            style="display: none"
+          />
+
+          <label for="file">
+            <img src="/images/Upload 2.png" class="upload-icon">
+          </label>
+          </div>
+         
+          
+          <p>
+            <strong><em>Fill in all fields in CAPITAL LETTERS</em></strong>
+          </p>
+        
+        <form class="form-container" action="SignUp.html" method="get" id="SignUp">
+          <fieldset class="form_field">
+            <legend class="form_head">PERSONAL INFO:</legend>
+            <div class="form_group">
+              <label class="label_head" for="name">Name:</label>
+              <div class="set">
+                <div class="set_item">
+                  <input
+                    class="form_item"
+                    type="text"
+                    id="fullname"
+                    placeholder="Full Name" onkeyup="validateName()"
+                  />
+                  <span id="name-error"></span>
+                </div>
+                </div>
+                <br>
+              <label class="label_head" for="address">Address:</label>
+              <input
+                class="form_item"
+                type="text"
+                id="address"
+                placeholder="Address"
+              />
+              <span id="address-error"></span>
+              <br />
+              <label class="label_head" for="local">Local Govt. Area:</label>
+              <input
+                class="form_item"
+                type="text"
+                id="local"
+                placeholder="Local Government Area"
+              />
+              <span id="localGovt-error"></span>
+            
+            <br>
+            <label class="label_head" for="state">State of Origin:</label>
+              <input class="form_item" type="text" id="stateOfOrigin" placeholder="State of Origin" />
+              <span id="state-error"></span>
+              <br />
+              <label class="label_head" for="country">Nationality:</label>
+              <input
+                class="form_item"
+                type="text"
+                id="country"
+                placeholder="e.g Country of Residence"
+              />
+              <span id="country-error"></span>
+              
+              <br />
+              <label class="label_head" for="contact">Contact:</label>
+              <div class="set2">
+                <div class="set_item2">
+                  <input
+                    class="form_item"
+                    type="telephone"
+                    id="telephone"
+                    placeholder="e.g +000 000 000"
+                  />
+                  <span id="phone-error"></span>
+                </div>
+                <div class="set_item2">
+                  <input
+                    class="form_item"
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                  <span id="email-error"></span>
+                </div>
+              </div>
+              <br>
+              <label class="label_head" for="age">Date of Birth:</label>
+              <input
+                class="form_item"
+                type="date"
+                id="dob"
+                placeholder="Date of Birth"
+              />
+              <span id="dob-error"></span>
+              <br />
+              <label class="label_head" for="sex">Sex:</label>
+              <select class="select_item" id="genderStatus" placeholder="Select Gender">
+                <option class="form_item" id="male">Male</option>
+                <option class="form_item" id="female">Female</option>
+                <option class="form_item" id="others">Others</option>
+              </select>
+              <span id="gender-error"></span>
+              <br />
+              <label class="label_head" for="marital">Marital Status:</label>
+              <select class="select_item" id="maritalStatus">
+                <option class="form_item" id="single">Single</option>
+                <option class="form_item" id="married">Married</option>
+              </select>
+              <span id="marital-error"></span>
+              <br />
+              <label class="label_head" for="religion">Reigion:</label>
+              <select class="select_item" id="select_religion">
+                <option class="form_item" id="muslim">Islam</option>
+                <option class="form_item" id="christian">Christian</option>
+                <option class="form_item">Others</option>
+              </select>
+              <span id="religion-error"></span>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset class="form_field">
+            <legend class="form_head">COURSE INFORMATION:</legend>
+            <div class="form_group">
+              <label class="label_head" for="course">Courses:</label>
+              <select class="select_item" id="select_course">
+                <option class="form_item" id="dpublishing">Desktop Publishing</option>
+                <option class="form_item" id="cengineering">Computer Engineering</option>
+                <option class="form_item" id="codprog">Coding/Programming</option>
+                <option class="form_item" id="robotics">Robotics</option>
+              </select>
+              <span id="course-error"></span>
+              <br />
+              <label class="label_head" for="duration">Duration:</label>
+              <select class="select_item" id="course_length">
+                <option class="form_item" id="2w">Two(2) Week</option>
+                <option class="form_item" id="1m">One(1) Month</option>
+                <option class="form_item" id="3m">Three(3) Month</option>
+              </select>
+              <span id="duration-error"></span>
+              <br />
+              <label class="label_head" for="time">Time:</label>
+              <select class="select_item" id="course_duration">
+                <option class="form_item" id="10-12">10:00AM - 12:00PM</option>
+                <option class="form_item" id="1-3">1:00PM - 3:00PM</option>
+                <option class="form_item" id="4-6">4:00PM - 6:00PM</option>
+                <option class="form_item" id="7-9">7:00PM - 9:00PM</option>
+              </select>
+              <span id="time-error"></span>
+            </div>
+          <br />
+          </fieldset>
+          <br />
+          <input type="checkbox" id="checkbox"/>&nbsp<a href="terms.html">I accept the terms and conditions</a
+          >
+          <span id="checkbox-error"></span>
+          <br />
+          <br />
+          <button class="submit" type="submit">Submit</button>
+          <span id="submit-error"></span>
+        </form>
+      </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="head-office">
+          <ul>
+            <li class="items-head">Head Office:</li>
+            <li class="footer-items">103b Yemi Alimi Street,</li>
+            <li class="footer-items">Ori-Okuta, Owutu</li>
+            <li class="footer-items">Ikorodu, Lagos State</li>
+          </ul>
+        </div>
+        <div class="work-hours">
+          <ul>
+            <li class="items-head">Work Hours(Weekdays):</li>
+            <li class="footer-items">Monday - Friday</li>
+            <li class="footer-items">9:00am - 4:00pm</li>
+          </ul>
+        </div>
+        <div class="work-hours">
+          <ul>
+            <li class="items-head">Work Hours(Weekends):</li>
+            <li class="footer-items">Saturday:</li>
+            <li class="footer-items">2:00pm - 4:00pm</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
